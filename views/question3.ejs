@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include partials/head %>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    </head>
+    <body class="container">
+                <% include partials/header %>
+    <div id="questionContainer" class="form-group">
+    <h2><%=question.question%></h2>
+     <form action="/thanks" method="post">
+     <input type="text" class="form-control" required="">
+  </div>
+  <button class="btn btn-success btn-sm">
+   ok </button>
+  </form>
+    <footer><% include partials/footer %></footer>
+    </body>
+    <style>
+    
+       questionContainer {
+           display: flex;
+           justify-content: center;
+       },
+       
+       a {
+    color: black !important;
+    
+        }
+    
+    </style>
+</html>
